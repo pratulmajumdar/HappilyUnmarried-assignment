@@ -22,7 +22,7 @@ class Products extends Component {
     if (prevProps.categoryName !== this.props.categoryName) {
       this.setState({
         categorySelected: this.props.categories.filter(
-          (data) => data.category_id === this.props.categoryName
+          (data) => data.category_name === this.props.categoryName
         )[0]?.category_id,
       });
     }
@@ -57,7 +57,6 @@ class Products extends Component {
   };
 
   render() {
-    console.log(this.state.products)
     return (
       <Fragment>
         <div className="products-box">
