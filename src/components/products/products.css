@@ -1,0 +1,25 @@
+.products-box {
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
+    margin-top: 3rem;
+}
+
+.indi-product {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.add-to-cart-btn {
+    background-color: #4fcf64 !important;
+}
+
+.out-of-stock-btn {
+    background-color: #b0b0b0 !important;
+}
+
+.view-btn {
+    display: table !important;
+    float: right !important;
+    background-color: #d8dde6 !important;
+}
