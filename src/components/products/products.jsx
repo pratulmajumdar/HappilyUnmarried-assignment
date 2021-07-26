@@ -1,7 +1,7 @@
 import React, { Component, Fragment } from "react";
 import { connect } from "react-redux";
 import Button from "@material-ui/core/Button";
-import { StarIcon } from "@material-ui/icons";
+import { StarHalf } from "@material-ui/icons";
 import NativeSelect from "@material-ui/core/NativeSelect";
 import { getCategoryData } from "../../actions/initAction";
 
@@ -37,7 +37,10 @@ class Products extends Component {
         <div className="product-info">
           <div>
             <span>{data.name}</span>
-            <span style={{ marginLeft: "10px" }}>{data.rating}</span>
+            <span style={{ marginLeft: "10px" }}>
+              {data.rating}
+              <StarHalf className="star-icon-rating" />
+            </span>
           </div>
           <span>{data.weight + data.weight_unit}</span>
           <div>
